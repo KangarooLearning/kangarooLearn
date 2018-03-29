@@ -1,0 +1,15 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+<h1>Course Information Details, Announcements</h1>
+<img  src="/static/personal/img/py.png" class="responsive-img" style='max-height:300px;' alt="internet_cable">
+&nbsp;&nbsp;
+<img  src="/static/personal/img/internet.png" class="responsive-img" style='max-height:300px;' alt="internet_cable">
+
+  {% for post in object_list %}
+    <h5><a href="/courses/{{post.id}}"> ~ {{post.title}}</a></h5>
+
+  {% endfor %}
+
+
+{% endblock %}
